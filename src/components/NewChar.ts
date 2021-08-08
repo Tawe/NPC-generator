@@ -1,8 +1,7 @@
-import { getRace, getAge } from "./GetRace";
-import getName from "./GetName";
-import getOccupation from "./GetOccupation";
-import getTrait from "./GetTrait";
-
+import { getRace, getAge } from './GetRace';
+import getName from './GetName';
+import getOccupation from './GetOccupation';
+import getTrait from './GetTrait';
 
 interface characterProps {
     name: string;

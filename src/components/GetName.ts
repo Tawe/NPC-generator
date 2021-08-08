@@ -1,5 +1,4 @@
-
-import rollDice from "./Diceroller";
+import rollDice from './DiceRoller';
 import names from '../data/names.json';
 
 const getName = (race: string): string => {
