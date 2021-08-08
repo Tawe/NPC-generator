@@ -1,6 +1,6 @@
 import { ReactChild, useState } from 'react';
 import styled from 'styled-components';
-import newChar from './components/NewChar';
+import { newChar } from './components/NewChar';
 
 function App(): ReactChild {
     const [character, setCharacter] = useState(newChar());

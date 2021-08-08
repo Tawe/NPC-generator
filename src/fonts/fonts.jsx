@@ -11,5 +11,6 @@ export default createGlobalStyle`
         url(${MedievalSharp2}) format('woff');
         font-weight: 300;
         font-style: normal;
+        font-display: swap;
     }
 `;
