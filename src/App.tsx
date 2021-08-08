@@ -26,8 +26,8 @@ function App(): ReactChild {
                     <strong>Trait: </strong>
                     {character && character.trait}
                 </div>
-                <Button onClick={() => setCharacter(newChar())}>New NPC</Button>
             </Container>
+            <Button onClick={() => setCharacter(newChar())}>New NPC</Button>
         </Background>
     );
 }
@@ -41,7 +41,7 @@ const Background = styled.div`
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    height: 220px;
+    height: 160px;
     justify-content: space-evenly;
     font-family: MedievalSharp;
     font-size: 18px;
