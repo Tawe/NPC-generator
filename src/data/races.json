@@ -1,0 +1,58 @@
+{
+    "human":{
+        "base":15,
+        "modifier": 90
+    },
+    "dwarf":{
+        "base":50,
+        "modifier":300
+    },
+    "elf":{
+        "base":100,
+        "modifier":650
+    },
+    "half-elf":{
+        "base":20,
+        "modifier": 180
+    },
+    "half-orc":{
+        "base":14,
+        "modifier":63
+    },
+    "halfling":{
+        "base":20,
+        "modifier":200
+    },
+    "gnome":{
+        "base":40,
+        "modifier":450
+    },
+    "tiefling":{
+        "base":15,
+        "modifier": 100
+    },
+    "dragonborn":{
+        "base":15,
+        "modifier":65
+    },
+    "genasi":{
+        "base": 15,
+        "modifier":105
+    },
+    "goliath":{
+        "base":15,
+        "modifier": 90
+    },
+    "aasimnar":{
+        "base": 15,
+        "modifier":145
+    },
+    "firbolg":{
+        "base": 30,
+        "modifier": 470
+    },
+    "tabaxi":{
+        "base":15,
+        "modifier": 90
+    }
+}
