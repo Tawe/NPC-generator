@@ -1,11 +1,9 @@
 import rollDice from './DiceRoller';
 import traits from '../data/traits.json';
-const getTrait = (): string => {
+export default (): string => {
     if (traits) {
-        const tableNum: number = rollDice(traits.length) - 1;
-        return traits[tableNum][rollDice(Object.keys(traits[tableNum]).length) - 1];
+        const tableNum: number = rollDice(traits.length);
+        return traits[tableNum][rollDice(Object.keys(traits[tableNum]).length)];
     }
     return 'Traits Not Found';
 };
-
-export default getTrait;

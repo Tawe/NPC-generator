@@ -11,7 +11,7 @@ interface characterProps {
     trait: string;
 }
 
-const newChar = (): characterProps => {
+export default (): characterProps => {
     const race: string = getRace();
     return {
         name: getName(race),
@@ -21,5 +21,3 @@ const newChar = (): characterProps => {
         trait: getTrait(),
     };
 };
-
-export default newChar;
