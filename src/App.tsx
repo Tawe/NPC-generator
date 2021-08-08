@@ -56,7 +56,6 @@ function App(): ReactChild {
     return (
         <Background className="App">
             <Container>
-                <h1>NPC Generator</h1>
                 <Name>
                     <strong>{character && character.name}</strong>
                 </Name>
