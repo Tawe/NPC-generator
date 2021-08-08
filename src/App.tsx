@@ -90,7 +90,7 @@ const Background = styled.div`
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    height: 300px;
+    height: 220px;
     justify-content: space-evenly;
     font-family: MedievalSharp;
     font-size: 18px;
