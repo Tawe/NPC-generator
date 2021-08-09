@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { newChar } from './components/NewChar';
 
 function App(): ReactChild {
-    const [character, setCharacter] = useState(newChar());
+    const [character, setCharacter] = useState(newChar);
     return (
         <Background className="App">
             <Container>
@@ -26,8 +26,34 @@ function App(): ReactChild {
                     <strong>Trait: </strong>
                     {character && character.trait}
                 </div>
+                <StatsContainer>
+                    <div>
+                        <strong>Str: </strong>
+                        {character && character.stats.str}
+                    </div>
+                    <div>
+                        <strong>Dex: </strong>
+                        {character && character.stats.dex}
+                    </div>
+                    <div>
+                        <strong>Con: </strong>
+                        {character && character.stats.con}
+                    </div>
+                    <div>
+                        <strong>Int: </strong>
+                        {character && character.stats.int}
+                    </div>
+                    <div>
+                        <strong>Wis: </strong>
+                        {character && character.stats.wis}
+                    </div>
+                    <div>
+                        <strong>Cha: </strong>
+                        {character && character.stats.cha}
+                    </div>
+                </StatsContainer>
             </Container>
-            <Button onClick={() => setCharacter(newChar())}>New NPC</Button>
+            <Button onClick={() => setCharacter(newChar)}>New NPC</Button>
         </Background>
     );
 }
@@ -42,7 +68,7 @@ const Background = styled.div`
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    height: 160px;
+    height: 200px;
     justify-content: space-evenly;
     font-family: MedievalSharp;
     font-size: 18px;
@@ -68,6 +94,14 @@ const Button = styled.button`
     &:hover {
         color: forestgreen;
     }
+`;
+
+const StatsContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 350px;
+    justify-content: space-between;
 `;
 
 export default App;

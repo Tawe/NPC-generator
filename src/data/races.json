@@ -1,58 +1,198 @@
 {
     "human":{
-        "base":15,
-        "modifier": 90
+        "ageData":{
+            "base":15,
+            "modifier": 90
+        },
+        "statModifier":{
+            "str":0,
+            "dex":0,
+            "con":0,
+            "int":0,
+            "wis":0,
+            "cha":0
+        }
     },
     "dwarf":{
-        "base":50,
-        "modifier":300
+        "ageData":{
+            "base":50,
+            "modifier":300
+        },
+        "statModifier":{
+            "str":0,
+            "dex":0,
+            "con":2,
+            "int":0,
+            "wis":0,
+            "cha":0
+        }
     },
     "elf":{
-        "base":100,
-        "modifier":650
+        "ageData":{
+            "base":100,
+            "modifier":650
+        },
+        "statModifier":{
+            "str":0,
+            "dex":2,
+            "con":0,
+            "int":0,
+            "wis":0,
+            "cha":0
+        }
     },
     "half-elf":{
-        "base":20,
-        "modifier": 180
+        "ageData":{
+            "base":20,
+            "modifier": 180
+        },
+        "statModifier":{
+            "str":0,
+            "dex":0,
+            "con":0,
+            "int":0,
+            "wis":0,
+            "cha":2
+        }
     },
     "half-orc":{
-        "base":14,
-        "modifier":63
+        "ageData":{
+            "base":14,
+            "modifier":63
+        },
+        "statModifier":{
+            "str":2,
+            "dex":0,
+            "con":1,
+            "int":0,
+            "wis":0,
+            "cha":0
+        }
     },
     "halfling":{
-        "base":20,
-        "modifier":200
+        "ageData":{
+            "base":20,
+            "modifier":200
+        },
+        "statModifier":{
+            "str":0,
+            "dex":2,
+            "con":0,
+            "int":0,
+            "wis":0,
+            "cha":0
+        }
     },
     "gnome":{
-        "base":40,
-        "modifier":450
+        "ageData":{
+            "base":40,
+            "modifier":450
+        },
+        "statModifier":{
+            "str":0,
+            "dex":0,
+            "con":0,
+            "int":2,
+            "wis":0,
+            "cha":0
+        }
     },
     "tiefling":{
-        "base":15,
-        "modifier": 100
+        "ageData":{
+            "base":15,
+            "modifier": 100
+        },
+        "statModifier":{
+            "str":0,
+            "dex":0,
+            "con":0,
+            "int":1,
+            "wis":0,
+            "cha":2
+        }
     },
     "dragonborn":{
-        "base":15,
-        "modifier":65
+        "ageData":{
+            "base":15,
+            "modifier":65
+        },
+        "statModifier":{
+            "str":2,
+            "dex":0,
+            "con":0,
+            "int":0,
+            "wis":0,
+            "cha":1
+        }
     },
     "genasi":{
-        "base": 15,
-        "modifier":105
+        "ageData":{
+            "base": 15,
+            "modifier":105
+        },
+        "statModifier":{
+            "str":0,
+            "dex":0,
+            "con":2,
+            "int":0,
+            "wis":0,
+            "cha":0
+        }
     },
     "goliath":{
-        "base":15,
-        "modifier": 90
+        "ageData":{
+            "base":15,
+            "modifier": 90
+        },
+        "statModifier":{
+            "str":2,
+            "dex":0,
+            "con":1,
+            "int":0,
+            "wis":0,
+            "cha":0
+        }
     },
     "aasimar":{
-        "base": 15,
-        "modifier":145
+        "ageData":{
+            "base": 15,
+            "modifier":145
+        },
+        "statModifier":{
+            "str":0,
+            "dex":0,
+            "con":0,
+            "int":0,
+            "wis":0,
+            "cha":2
+        }   
     },
     "firbolg":{
-        "base": 30,
-        "modifier": 470
+        "ageData":{
+            "base": 30,
+            "modifier": 470
+        },
+        "statModifier":{
+            "str":1,
+            "dex":0,
+            "con":0,
+            "int":0,
+            "wis":2,
+            "cha":0
+        }  
     },
     "tabaxi":{
-        "base":15,
-        "modifier": 90
+        "ageData":{
+            "base":15,
+            "modifier": 90
+        },
+        "statModifier":{
+            "str":0,
+            "dex":2,
+            "con":0,
+            "int":0,
+            "wis":0,
+            "cha":1
+        }  
     }
 }
