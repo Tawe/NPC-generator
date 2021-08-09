@@ -48,7 +48,6 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    font-family: MedievalSharp;
     font-size: 18px;
     padding: 20px;
 `;
