@@ -1,6 +1,4 @@
 import rollDice from './DiceRoller';
-interface AgeProps {
-    base: number;
-    modifier: number;
-}
+import { AgeProps } from './Interfaces';
+
 export default ({ base, modifier }: AgeProps): string => `${base + rollDice(modifier)}`;
