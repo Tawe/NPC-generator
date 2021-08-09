@@ -1,6 +1,7 @@
 import { ReactChild, useState } from 'react';
 import styled from 'styled-components';
 import { newChar } from './components/NewChar';
+import StatsContainer from './components/StatsContainer';
 
 function App(): ReactChild {
     const [character, setCharacter] = useState(newChar);
@@ -26,32 +27,7 @@ function App(): ReactChild {
                     <strong>Trait: </strong>
                     {character && character.trait}
                 </div>
-                <StatsContainer>
-                    <div>
-                        <strong>Str: </strong>
-                        {character && character.stats.str}
-                    </div>
-                    <div>
-                        <strong>Dex: </strong>
-                        {character && character.stats.dex}
-                    </div>
-                    <div>
-                        <strong>Con: </strong>
-                        {character && character.stats.con}
-                    </div>
-                    <div>
-                        <strong>Int: </strong>
-                        {character && character.stats.int}
-                    </div>
-                    <div>
-                        <strong>Wis: </strong>
-                        {character && character.stats.wis}
-                    </div>
-                    <div>
-                        <strong>Cha: </strong>
-                        {character && character.stats.cha}
-                    </div>
-                </StatsContainer>
+                <StatsContainer stats={character.stats} />
             </Container>
             <Button onClick={() => setCharacter(newChar)}>New NPC</Button>
         </Background>
@@ -91,15 +67,6 @@ const Button = styled.button`
     padding: 6px 24px;
     margin-left: 20px;
     text-decoration: none;
-`;
-
-const StatsContainer = styled.div`
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-    width: 40%;
-    justify-content: space-between;
-    flex-wrap: wrap;
 `;
 
 export default App;

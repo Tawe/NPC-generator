@@ -8,13 +8,6 @@ export default (): RaceProps => {
     const [name, { ageData, statModifier }]: [string, RaceDataProps] = Object.entries(races).filter(
         (r) => r[0] === keys[num],
     )[0];
-    console.log({
-        name: name,
-        raceData: {
-            ageData: ageData,
-            statModifier: statModifier,
-        },
-    });
     return {
         name: name,
         raceData: {
