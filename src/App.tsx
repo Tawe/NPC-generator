@@ -1,7 +1,8 @@
 import { ReactChild, useState } from 'react';
+import { lazy, Suspense } from 'react';
 import styled from 'styled-components';
 import { newChar } from './components/NewChar';
-import StatsContainer from './components/StatsContainer';
+const StatsContainer = lazy(() => import('./components/StatsContainer'));
 
 function App(): ReactChild {
     const [character, setCharacter] = useState(newChar);
@@ -27,7 +28,9 @@ function App(): ReactChild {
                     <strong>Trait: </strong>
                     {character && character.trait}
                 </div>
-                <StatsContainer stats={character.stats} />
+                <Suspense fallback={<>Loading...</>}>
+                    <StatsContainer stats={character.stats} />
+                </Suspense>
             </Container>
             <Button onClick={() => setCharacter(newChar)}>New NPC</Button>
         </Background>
