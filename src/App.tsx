@@ -31,7 +31,6 @@ function App(): ReactChild {
                 <Suspense fallback={<>Loading...</>}>
                     <StatsContainer stats={character.stats} />
                 </Suspense>
-                <div>Hi</div>
             </Container>
             <Button onClick={() => setCharacter(newChar)}>New NPC</Button>
         </Background>
