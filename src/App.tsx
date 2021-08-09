@@ -85,23 +85,21 @@ const Button = styled.button`
     border: 1px solid #eee;
     display: inline-block;
     cursor: pointer;
-    color: 000;
+    color: forestgreen;
     font-size: 15px;
     font-weight: bold;
     padding: 6px 24px;
     margin-left: 20px;
     text-decoration: none;
-    &:hover {
-        color: forestgreen;
-    }
 `;
 
 const StatsContainer = styled.div`
     display: flex;
     flex-direction: row;
     margin-top: 20px;
-    width: 350px;
+    width: 40%;
     justify-content: space-between;
+    flex-wrap: wrap;
 `;
 
 export default App;
