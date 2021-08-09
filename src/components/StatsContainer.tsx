@@ -29,7 +29,7 @@ const StatsContainerDiv = styled.div`
     display: flex;
     flex-direction: row;
     margin-top: 20px;
-    width: 40%;
+    max-width: 400px;
     justify-content: space-between;
     flex-wrap: wrap;
 `;

@@ -31,6 +31,7 @@ function App(): ReactChild {
                 <Suspense fallback={<>Loading...</>}>
                     <StatsContainer stats={character.stats} />
                 </Suspense>
+                <div>Hi</div>
             </Container>
             <Button onClick={() => setCharacter(newChar)}>New NPC</Button>
         </Background>
@@ -47,7 +48,6 @@ const Background = styled.div`
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    height: 200px;
     justify-content: space-evenly;
     font-family: MedievalSharp;
     font-size: 18px;
