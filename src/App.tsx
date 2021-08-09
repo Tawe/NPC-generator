@@ -33,9 +33,10 @@ function App(): ReactChild {
 }
 
 const Background = styled.div`
-    background-color: white;
+    background-color: #131212;
     width: 100%;
     height: 100%;
+    color: #dcdcdc;
 `;
 
 const Container = styled.div`
@@ -62,6 +63,7 @@ const Button = styled.button`
     font-size: 15px;
     font-weight: bold;
     padding: 6px 24px;
+    margin-left: 20px;
     text-decoration: none;
     &:hover {
         color: forestgreen;
